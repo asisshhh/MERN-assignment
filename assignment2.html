@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #a237c5;
+        }
+        h1{
+            text-size-adjust: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+        section{
+            border: 1px solid #000000;
+            margin: auto;
+            width: 35%;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+        input[type="text"], input[type="email"], select, textarea{
+            width: 97%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #3ba255;
+            color: #ffffff;
+            font-size: 16px;
+            text-align: center;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #a92bb5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <section>
+        <form>
+            <label>Name</label> &emsp; <br/>
+            <input type="text" name="firstname" placeholder="Enter your name" />
+            <BR></BR>
+            <label>Email</label> &emsp; <br/>
+            <input type="email" name="email" placeholder="Enter your email" />
+            <BR></BR>
+            <label>Age</label> &emsp; <br/>
+            <input type="text" name="age" placeholder="Enter your age"/>
+            <BR></BR>
+            <label>Which option best describes you?</label> &emsp; <br>
+            <select>
+                <option>Student</option>
+                <option>Businessman</option>
+                <option>Educator</option>
+                <option>Job</option> 
+            </select>
+            <BR></BR>
+            <label>Would you recommend GeeksforGeeks to a friend?</label>
+            <br/>
+            <input type="radio" value="1" name="option"/> Yes <br/>
+            <input type="radio" value="2" name="option"/> No <br/>
+            <input type="radio" value="3" name="option"/> Maybe <br/>
+            <BR></BR>
+            <label>Languages and Frameworks known (Check all that apply)</label> <br/>
+            <input type="checkbox" value="1" name="lang"> C <br/>
+            <input type="checkbox" value="2" name="lang"> C++ <br/>
+            <input type="checkbox" value="3" name="lang"> C# <br/>
+            <input type="checkbox" value="4" name="lang"> Java <br/>
+            <input type="checkbox" value="5" name="lang"> Python <br/>
+            <input type="checkbox" value="6" name="lang"> JavaScript <br/>
+            <input type="checkbox" value="7" name="lang"> React <br/>
+            <input type="checkbox" value="8" name="lang"> Angular <br/>
+            <input type="checkbox" value="9" name="lang"> Django <br/>
+            <input type="checkbox" value="10" name="lang"> Spring <br/>
+            <BR></BR>
+
+            <label>Any comments or suggestions</label> <br/>
+            <textarea cols="70" rows="2"></textarea>
+            <BR></BR>
+            <input type="submit" value="Submit" class="button"/>
+        </form>
+    </section>
+</body>
+</html>
